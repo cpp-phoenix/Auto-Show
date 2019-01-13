@@ -1,0 +1,736 @@
+﻿<!Doctype html>
+<html lang="en-US">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+    <style>
+        #main1{
+            min-height: 500px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    #twit{
+     margin-right:14px;
+     margin-top:0px;
+     border: 2px solid #0084B4;
+     padding:0px;
+     border-radius:40px;
+     -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+
+    }
+    #twit:hover{
+        background-color:#0084B4;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -o-transition: background-color 1s;
+        transition: background-color 1s;
+
+    }
+    #whats:hover{
+        background-color:#34AF23;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -o-transition: background-color 1s;
+        transition: background-color 1s;
+    }
+    #whats{
+        margin-top:0px;
+        margin-right:14px;
+        border: 2px solid #34AF23;
+        padding:6px;
+        border-radius:40px;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -o-transition: background-color 1s;
+        transition: background-color 1s;
+    }
+    #face:hover{
+        background-color:#3B5998;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -o-transition: background-color 1s;
+        transition: background-color 1s;
+
+    }
+    #face{
+        margin-top:0px;
+        margin-right:14px;
+        border:2px solid #3B5998;
+        padding:8px;
+        border-radius:40px;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -o-transition: background-color 1s;
+        transition: background-color 1s;
+    }
+    #insta:hover{
+        background-color:#9B6954;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -o-transition: background-color 1s;
+        transition: background-color 1s;
+    }
+    #insta{
+        margin-right:14px;
+        margin-top:0px;
+        border:2px solid #9B6954;
+        padding:8px;
+        border-radius:40px;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        -o-transition: background-color 1s;
+        transition: background-color 1s;
+    }
+
+    #one{
+        font-size:40px;
+        color:#1F618D;
+        font-family:cursive;
+        /*border:4px solid #1F618D;
+        border-color:#1F618D;
+        border-radius:30%;
+        */
+    }
+    #two{
+        text-align:right;
+        float:right;
+    }
+    #three{
+        float:right;
+        font-size:20px;
+        color:#1F618D;
+    }
+    #four{
+        background-image: url("color1.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sponse{
+        float:right; color:white; font-family:sans-serif; font-weight:bold; font-size:18px; margin-right:95px; margin-top:32px; text-decoration:none;
+        -webkit-transition: color 0.7s;
+    }
+    .sponse:hover{
+        color:#CB4335;
+        -webkit-transition: color 0.7s;
+    }
+    #afvid{
+        font-size:40px;
+        background-color:#EAEDED;
+        font-family:"calibri", Garamond, 'Comic Sans MS';;
+        padding:2px;
+        font-weight:300;
+        padding-left:20%;
+        color:#4D5656;
+    }
+    #afvid1{
+        font-size:40px;
+        background-color:#EAEDED;
+        font-family:"calibri", Garamond, 'Comic Sans MS';;
+        padding:2px;
+        font-weight:300;
+        padding-left:20%;
+        color:#4D5656;
+    }
+    #keep{
+        margin-left:440px;
+        font-weight:bold;
+        font-family:sans-serif;
+        font-size:55px;
+    }
+    #it{
+        font-size:35px;
+        font-family:cursive;
+        margin-left:300px;
+    }
+    #head{
+        margin-left:39%;
+        color:#1C2833;
+        font-family:sans-serif;
+        font-weight:bold;
+        padding-bottom:0px;
+        font-size:40px;
+        display: inline-block;
+    }
+    #head::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 3px;
+        background: #1C2833;
+        transition: width .3s;
+    }
+    #head:hover::after{
+        width:100%;
+    }
+    .parallax {
+        box-shadow:8px 8px 8px grey ;
+        /* The image used */
+        background-image: url("bentback.jpg");
+
+        /* Set a specific height */
+        min-height: 550px;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    .parallax:hover{
+        opacity:0.9;
+        filter:alpha(opacity=90);
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    #underp1:hover{
+        opacity:"100"
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    #underp1{
+       color:white;
+       opacity:"0"
+       display:none;
+       border:3px solid #red;
+       background-image: url("wodd.jpg");
+       font-size:40px;
+       font-family: fantasy;
+        margin-right:77%;
+        box-shadow: 7px 7px 7px #5D6D7E;
+        padding:7px;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+        /*-moz-transition: background-color 1s;
+        -o-transition: background-color 1s;
+         transition: background-color 1s;*/
+        /*-moz-transition: color 1s;
+        -o-transition: color 1s;
+         transition: color 1s;*/
+    }
+    #bentey{
+
+        margin-left:49px;
+    }
+    #bentend{
+        text-align:center;
+        float:center;
+        margin-top:10px;
+    }
+    #bdata{
+        font-size:48px;
+        background-color:#EAEDED;
+        font-family:"calibri", Garamond, 'Comic Sans MS';;
+        padding:2px;
+        font-weight:300;
+        padding-left:40%;
+        color:#4D5656;
+    }
+    .ona:hover{
+        -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+    }
+    .parallax1{
+        box-shadow:8px 8px 8px grey ;
+        /* The image used */
+        background-image: url("lamborgini.jpg");
+
+        /* Set a specific height */
+        min-height: 550px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    .parallax1:hover{
+        opacity:0.9;
+        filter:alpha(opacity=90);
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    #lamlabel{
+       color:white;
+       border:3px solid #red;
+       border-radius:2px;
+       background-color:#212121;
+       font-size:40px;
+       font-family: fantasy;
+        margin-right:72%;
+        box-shadow: 3px 3px 3px black;
+        padding:5px;
+        -webkit-transition: background-color 1s;
+    }
+    #lamlabel:hover{
+        background-color:#2C3E60;
+        -webkit-transition: background-color 1s;
+    }
+    #lambend{
+        text-align:center;
+        float:center;
+        margin-top:20px;
+    }
+    #lamdata{
+        font-size:50px;
+        background-color:#EAEDED;
+        font-family:"calibri", Garamond, 'Comic Sans MS';;
+        padding:2px;
+        font-weight:300;
+        padding-left:220px;
+        color:#4D5656;
+    }
+    .parallax2{
+        box-shadow:8px 8px 8px grey ;
+        /* The image used */
+        background-image: url("mercedes.jpg");
+
+        /* Set a specific height */
+        min-height: 550px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    .parallax2:hover{
+        opacity:0.9;
+        filter:alpha(opacity=90);
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    #merclabel{
+       color:white;
+       border:3px solid #red;
+       border-radius:2px;
+       background-color:#2F4F4F;
+       font-size:40px;
+       font-family: fantasy;
+        margin-right:70%;
+        box-shadow: 3px 3px 3px black;
+        padding:5px;
+        -webkit-transition: background-color 1s;
+    }
+    #merclabel:hover{
+        background-color:#0B5345;
+        -webkit-transition: background-color 1s;
+    }
+    #mercbend{
+        text-align:center;
+        float:center;
+        margin-top:20px;
+    }
+    #mdata{
+        font-size:48px;
+        background-color:#EAEDED;
+        font-family:"calibri", Garamond, 'Comic Sans MS';;
+        padding:2px;
+        font-weight:300;
+        padding-left:20%;
+        color:#4D5656;
+    }
+    .parallax3{
+        box-shadow:8px 8px 8px grey ;
+        /* The image used */
+        background-image: url("landback3.jpg");
+
+        /* Set a specific height */
+        min-height: 550px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    .parallax3:hover{
+        opacity:0.9;
+        filter:alpha(opacity=90);
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    #landlabel{
+       color:white;
+       border:5px groove #red;
+       border-radius:2px;
+       background-color:#186A3B;
+       font-size:40px;
+       font-family: fantasy;
+        margin-right:74%;
+        box-shadow: 3px 3px 3px black;
+        padding:5px;
+        -webkit-transition: background-color 1s;
+    }
+    #landlabel:hover{
+        background-color:#239B56;
+        -webkit-transition: background-color 1s;
+    }
+    #landbend{
+        text-align:center;
+        float:center;
+        margin-top:20px;
+    }
+    #landdata{
+        font-size:48px;
+        background-color:#EAEDED;
+        font-family:"calibri", Garamond, 'Comic Sans MS';;
+        padding:2px;
+        font-weight:300;
+        padding-left:35%;
+        color:#4D5656;
+    }
+    .parallax4{
+        box-shadow:8px 8px 8px grey ;
+        /* The image used */
+        background-image: url("porbackground.jpg");
+
+        /* Set a specific height */
+        min-height: 550px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    .parallax4:hover{
+        opacity:0.9;
+        filter:alpha(opacity=90);
+        -moz-transition: all 0.4s ease-out;
+        -o-transition:all 0.4s ease-out;
+        -webkit-transition:all 0.4s ease-out;
+        -ms-transition:all 0.4s ease-out;
+        transition:all 0.4s ease-out;
+    }
+    #porlabel{
+       color:white;
+       border:2px solid #red;
+       border-radius:2px;
+       background-color:#B7950B;
+       font-size:40px;
+       font-family: fantasy;
+        margin-right:76%;
+        box-shadow: 3px 3px 3px black;
+        padding:5px;
+        -webkit-transition: background-color 1s;
+    }
+    #porlabel:hover{
+        background-color:#F1C40F;
+        -webkit-transition: background-color 1s;
+    }
+    #porbend{
+        text-align:center;
+        float:center;
+        margin-top:20px;
+    }
+    #pordata{
+        font-size:48px;
+        background-color:#EAEDED;
+        font-family:"calibri", Garamond, 'Comic Sans MS';;
+        padding:2px;
+        font-weight:300;
+        padding-left:23%;
+        color:#4D5656;
+    }
+    #end1{
+        background-image: url("lights.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    #end2{
+        font-size:45px;
+        color:white;
+        font-family:cursive;
+        padding:20px;
+        font-weight:bold;
+        font-stretch:ultra-condensed;
+
+
+    }
+    #end3{
+	padding-left:340px;
+        font-size:17px;
+        color:white;
+        padding-top:5px;
+        font-weight:bold;
+        font-family:cursive;
+    }
+    #end4{
+        color:white;
+        border: 1px solid #B91914;
+        background-color:#B91914;
+        padding:20px;
+        padding-left:30px;
+        padding-right:30px;
+        margin:28px;
+        font-weight:bold;
+        font-family:cursive;
+        -webkit-transition: background-color 0.5s;
+    }
+    #end4:hover{
+        background-color:white;
+        color:#B91914;
+        -webkit-transition: background-color 0.5s;
+        border-color:white;
+    }
+    #grey{
+        background-color:#212121;
+    }
+    #grey1{
+        margin-left:130px;
+        color:white;
+        font-size:19px;
+        font-family:sans-serif;
+        -webkit-transition: color 0.3s;
+    }
+    #grey1:hover{
+        color:#A93226;
+        -webkit-transition: color 0.3s;
+    }
+    .grey2{
+        font-size:19px;
+        margin-left:30px;
+        color:white;
+        font-family:sans-serif;
+        -webkit-transition: color 0.3s;
+    }
+    .grey2:hover{
+        color:#A93226;
+        -webkit-transition: color 0.3s;
+    }
+    #gray1{
+        color:#616A6B;
+        margin-left:200px;
+        font-size:16px;
+        font-weight:bold;
+        font-family:monospace;
+    }
+    .gray2{
+        color:#616A6B;
+        font-family:monospace;
+        margin-left:50px;
+        font-weight:bold;
+        font-size:16px;
+    }
+    .end{
+        border:px solid black;
+        background-color:black;
+    }
+    #bla{
+        color:white;
+        font-size:15px;
+        font-family:sans-serif;
+        padding-left:20px;
+    }
+    #feed{
+        position:fixed;
+        display:block;
+        z-index:1000;
+        margin-left:1270px;
+        margin-top:25%;
+        transform: rotate(-90deg);
+        border:2px solid #154360;
+        font-weight:bold;
+        padding:8px;
+        padding-top:12px;
+        background-color:#2874A6;
+        font-size:23px;
+        color:white;
+        -webkit-transition: color 0.7s;
+
+    }
+    #feed:hover{
+        background-color:white;
+        color:#2874A6;
+        -webkit-transition: color 0.7s;
+    }
+
+    </style>
+    <title>Auto Expo</title>
+    <script src="jquery.js"></script>
+</head>
+<body style="margin:0px;">
+        <div style="position:relative;">
+                 <div id="feed" onclick="myfun()">Feedback</div>
+        <div id="x" style="position:fixed; display:block; z-index:1000; margin-left:95%; margin-top:40%; border:2px solid black; border-radius:400px; padding-top:4px; padding-left:2px; padding-right:2px; background-color:black"><img src="logo.png" height=35px width=35px></div>
+        </div>
+        <script>
+        $(document).ready(function () {
+            $("#x").hide();
+        $(window).scroll(function () {
+        if ($(this).scrollTop() > 2200) {
+
+            $("#x").fadeIn(500);
+        } else {
+
+            $("#x").fadeOut(500);
+        }
+    });
+});
+        </script>
+        <script>
+            $(document).ready(function(){
+            $("#x").click(function(){
+                $('html,body').animate({
+   scrollTop: 0
+},5000);
+            });
+        });
+        </script>
+        <div id="main1">
+    <div id="four"><br>
+        <span id="one">
+          <img src="auto1.png" height="95px" width="350px" style=" padding-left: 10px; border-right:2px solid #D5D8DC; padding-right:10px;">
+        </span>
+        <a href="http://www.chicagoautoshow.com/sponsor/">
+          <span class="sponse">SPONSER</span>
+        </a>
+        <a href="http://www.chicagoautoshow.com/media/">
+          <span class="sponse">MEDIA</span>
+        </a>
+        <a href="http://www.chicagoautoshow.com/first-look-for-charity/" >
+          <span class="sponse">EXIBITOR</span>
+        </a>
+    </div>
+    <div>
+    <video width="100%" height="100%" controls autoplay>
+        <source src="Lexus International - Experience Amazing.MP4" type="video/mp4">
+    </video>
+    </div>
+    <div id="afvid"><p>IT's IMAGINATION THAT TRANSFORMS ORDINARY,<br><span id="afvid1"> INTO EXTRAORDINARY.</span></div>
+    <div>
+        <span id="head">Top Companies</span>
+        <hr align="center" width="50px" size="3px" color="#b91914">
+    </div>
+
+    <div class="parallax" onmouseover="bentshow()" onmouseout="benthide()"><br><br><div id="underp1"><span id="bentey">BENTLEY</span></div></div>
+
+    <script>
+       /* function bentshow()
+        {
+            $(underp1).show('slow');
+        }
+        function benthide()
+        {
+            $(underp1).hide('slow');
+        }*/
+    </script>
+    <div id="bentend"><span><a href="https://twitter.com/"><img src="bentylogo.png" align="center" height="160px" width="280px" ></a></span></div>
+    <div id="bdata"><p>It's OK to stare.</p></div>
+    <div style="line-height:0">
+    <span><img src="bentley2.jpg" height="300px" width="449px" style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></span><span><img src="bentley1.jpg" height="300px" width="450px" style="-moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></span><span ><img src="bentley9.jpg" height="300px" width="450px" style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></span>
+    <span><img src="bentley4.jpg" height="300px" width="449px" style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></span><span><img src="bentley3.jpg" height="300px" width="450px" style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></span><span ><img src="bentley8.jpg" height="300px" width="450px" style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></span>
+    </div><br>
+    <hr height=300px width=500px color=grey><br>
+
+    <div class="parallax1"><br><br><div id="lamlabel"><span id="bentey">LAMBORGHINI</span></div></div>
+    <div id="lambend"><span><img src="lamborglog.png" height="80px" align="center" ></span></div>
+    <div id="lamdata"><p>Lamborghini is refinement, luxury and perfection.</p></div>
+    <div style="line-height:0" >
+        <span><img src="lamb8.jpg" height=300px width=450px style="-moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona" ><img src="lamb4.jpg" height=300px width=451px style="-moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="lamb7.jpg" height=300px width=448px style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona">
+            <img src="lamb3.jpg" height=300px width=450px style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="lamb9.jpg" height=300px width=451px style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="lamb6.jpg" height=300px width=448px style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></span>
+    </div>
+    <br><hr height=300px width=500px color=grey><br>
+    <div style="position:relative;">
+    <div class="parallax2"><br><br><div id="merclabel"><span id="bentey">MERCEDES-BENZ</span></div></div>
+    <div id="mercbend"><span><img src="Merlogo.png" height="140px" align="center" ></span></div>
+    <div id="mdata"><p>Mercedes does beautiful work, absolutely.</p></div>
+    <div style="line-height:0">
+            <img src="mer2.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="mer8.jpg" height=300px width=34% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="mer5.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona">
+            <img src="mer6.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="mer7.jpg" height=300px width=34% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="mer3.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona">
+    </div>
+        <br><hr height=300px width=500px color=grey><br>
+
+    <div class="parallax3"><br><br><div id="landlabel"><span id="bentey">LAND ROVER</span></div></div>
+    <div id="landbend"><span><img src="landlogo.png" height="140px" align="center" ></span></div>
+    <div id="landdata"><p>Above And Beyond!</p></div>
+    <div style="line-height:0">
+            <img src="land1.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="land8.jpg" height=300px width=34% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="land3.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona">
+
+            <img src="land10.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="land6.jpg" height=300px width=34% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="land5.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona">
+    </div>
+        <br><hr height=300px width=500px color=grey><br>
+
+    <div class="parallax4"><br><br><div id="porlabel"><span id="bentey">PORSCHE</span></div></div>
+    <div id="porbend"><span><img src="porlogo.png" height="140px" align="center" ></span></div>
+    <div id="pordata"><p>If the mud ain’t flying, you ain’t trying!</p></div>
+    <div style="line-height:0"  >
+            <img src="por10.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona" ><img src="por18.jpg" height=300px width=34% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="por12.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></div>
+
+            <img src="por22.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="por2.jpg" height=300px width=34% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"><img src="por20.jpg" height=300px width=33% style=" -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;" class="ona"></div>
+    </div>
+
+    <div id="end1"><br><br><span id="end2">Stay Connected</span><span id="end3">GET THE LATEST NEWS AND TICKET OFFERS</span><a href="nex.html#end4" style="text-decoration:none;"><span id="end4" onclick="myfun()">SIGN UP</span></a><br><br><br><Br></div>
+    <div id="grey"><br><br><br><a href="http://www.chicagoautoshow.com/about-the-show/"  target="_blank" style="text-decoration:none;"><span id="grey1">ABOUT</span></a><a href="http://www.chicagoautoshow.com/first-look-for-charity/" style="text-decoration:none;" target="_blank"><span class="grey2">FIRST LOOK FOR CHARITY</span></a><a href="http://www.chicagoautoshow.com/multimedia/" target="_blank" style="text-decoration:none;"><span class="grey2">MULTIMEDIA</span></a><a href="" target="_blank" style="text-decoration:none;"><span class="grey2">VEHICLES ON DISPLAY</span></a><a href="http://www.chicagoautoshow.com/news/" target="_blank" style="text-decoration:none;"><span class="grey2">NEWS & EVENTS</span></a><a href="http://www.chicagoautoshow.com/history/1901/" target="_blank" style="text-decoration:none;"><span class="grey2">SHOW HISTORY</span></a><br><br>
+    <a href="http://www.chicagoautoshow.com/privacy-policy/" style="text-decoration:none"><span id="gray1">PRIVACY POLICY</span></a><a href="http://www.chicagoautoshow.com/disclaimer/" style="text-decoration:none;"><span class="gray2">DISCLAIMER</span></a><a href="http://www.chicagoautoshow.com/contact/" style="text-decoration:none;"<span class="gray2">CONTACT US</span></a><a href="http://www.chicagoautoshow.com/terms-of-use/" style="text-decoration:none;"><span class="gray2">TERMS OF USE</span></a><a href="http://www.chicagoautoshow.com/sitemap/" style="text-decoration:none;"><span class="gray2">SITE MAP</span></a><a href="http://www.chicagoautoshow.com/newsletter/" style="text-decoration:none;"><span class="gray2">JOIN OUR MAILING LIST</span></a><br><br>
+    <br><Br><BR><br></div>
+    <div class="end"><br><br><span id="two"><br><a href="https://twitter.com/" target="_blank"><img id="twit" src="twitter.png" height="45px" width="45px" align="right"></a><a href="https://www.whatsapp.com/" target="_blank"><img id="whats" src="whatslogo.png" height="36px" width="38px" align="right"></a><a href="https://www.facebook.com/" target="_blank"><img id="face" src="facelogo.png" height="32px" width="32px" align="right"></a> <a href="https://www.instagram.com/?hl=en" target="_blank"><img id="insta" src="instagram.png" height="32px" width="32px" align="right"></a></span><br><Br><span id="bla">© 2017 Los Angeles Auto Show | Website site design and development by Chitkara Students</span><br><br></div>
+    <script>
+    function myfun()
+    {
+        window.open("signin.html","new","width=700px height=600px");
+    }
+    </script>
+    </div>
+    </body>
+</html>

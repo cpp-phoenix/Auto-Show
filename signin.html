@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+        #top{
+            font-size:40px;
+            font-family:havelica;
+            font-weight:bold;
+            margin-top:20px;
+        }
+        #name1{
+            margin:10px;
+        }
+        #name2{
+            margin-left:10px;
+            ma
+        }
+        #name3{
+            margin-left:5px;
+        }
+        #add{
+            margin-left:10px;
+        }
+        #add1{
+            margin-left:5px;
+        }
+        #op{
+            background-image: url("color.jpg");
+    
+        /* Set a specific height */
+        min-height: 700px; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        }
+        </style>
+    </head>
+    <body id="op" style="font-family:cursive; color:white; background-color:#D0D3D4;">
+    <div >
+        <div id="top" style="text-align:center;"> Registration form</div><hr style="background-color:white; height:2px; width:300 px; ">
+        <div><span id="name1">Name</span><br><span><input id="name3" type="text" placeholder="First Name" style="width:100px; border:2px inset #CCD1D1;"></span><span><input id="name2" type="text" placeholder="Last Name" style="width:130px;  border:2px inset #CCD1D1;"> </span></spna></div>
+        <br><div id="add">Address</div>
+        <div><input id="add1" type="text" style="width:240px;  border:2px inset #CCD1D1;"></div><br>
+        <div id="add">Street Address</div>
+        <div><input id="add1" type="text" style="width:240px;  border:2px inset #CCD1D1;"></div>
+        <br>
+        <div id="add"><span>City</span><span style="margin-left:220px;">State/Province/Region</span></div>
+        <div><span><input id="add1" type="text" style="width:240px;  border:2px inset #CCD1D1;"></span>
+        <span><input id="add1" type="text" style="width:240px;  border:2px inset #CCD1D1;"></span></div>
+        <br>
+        <div id="add"><span>Postal/Zip Code</span><span style="margin-left:135px;">Country</span></div>
+        <div><span><input id="add1" type="text" style="width:240px;  border:2px inset #CCD1D1;"></span>
+        <span><input id="add1" type="text" style="width:240px;  border:2px inset #CCD1D1;"></span></div>
+        <br>
+        <div id="add"><span>Phone</span><span style="margin-left:213px;">Email</span></div>
+        <div><span><input id="add1" type="text" style="width:240px;  border:2px inset #CCD1D1;"></span>
+        <span><input id="add1" type="text" style="width:240px;  border:2px inset #CCD1D1;"></span></div>
+        <br>
+        <div id="add"><span>Accommodation Status</span></div>
+        <div><span>
+            <select style="width:245;" placeholder="Select any">
+                    <option disabled selected value >-- select an option -- </option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+            <option>Canada</option>
+            <option>France</option>
+            <option>New Zealand</option>
+            <option>India</option>
+            <option>Brazil</option>
+            </select>
+        </span></div>
+         <br>
+        <fieldset style="width:465px; height:120px;">
+            <legend>Special Needs</legend>
+            <input type="textarea" style="height:100px; width:465px;  border:2px inset #CCD1D1;">
+        </fieldset>
+        <input type="button" value="Submit" style="margin-left:3px; color:black; font-weight:bold;   margin-top:5px;  border:2px outset #CCD1D1;" onclick="myfin()">
+        <script>
+        function myfin(){
+            
+            window.close(this);
+            alert("Your form Has been submitted");
+        }
+        </script>
+    </div>
+    </body>
+</html>
